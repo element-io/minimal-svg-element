@@ -124,6 +124,21 @@ To run the example code from the top-level application directory,
 $ node ./examples/index.js
 ```
 
+## Notes
+
+When creating SVG elements, you are __encouraged__ to set the parent `svg` element [namespace](https://developer.mozilla.org/en-US/docs/Web/SVG/Namespaces_Crash_Course). Doing so enables user-agents to determine the XML tag dialect and properly render SVG elements.
+
+``` javascript
+var canvas = createSVGElement( 'svg' );
+
+canvas
+	.attr( 'xmlns', 'http://www.w3.org/2000/svg' )
+	.attr( 'xmlns:xlink', 'http://www.w3.org/1999/xlink' )
+	.attr( 'xmlns:ev', 'http://www.w3.org/2001/xml-events' );
+```
+
+
+
 
 ## Tests
 

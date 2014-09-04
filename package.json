@@ -1,6 +1,6 @@
 {
   "name": "minimal-svg-element",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Factory for creating minimal SVG elements.",
   "author": {
     "name": "Athan Reines",
